@@ -1,19 +1,16 @@
-﻿  // Solicita a nota final do estudante
-        Console.WriteLine("Informe a nota final:");
+﻿ Console.WriteLine("Informe a temperatura atual:");
 
-        // Lê a nota digitada
-        int nota = int.Parse(Console.ReadLine());
+        int temperatura = int.Parse(Console.ReadLine());
 
-        // Verificação a situação do estudante
-        if (nota >= 7)
+        if (temperatura < 18)
         {
-            Console.WriteLine("Estudante aprovado.");
+            Console.WriteLine("Ambiente frio.");
         }
-        else if (nota >= 5)
+        else if (temperatura <= 26)
         {
-            Console.WriteLine("Estudante em recuperação.");
+            Console.WriteLine("Ambiente confortável.");
         }
         else
         {
-            Console.WriteLine("Estudante reprovado.");
+            Console.WriteLine("Ambiente quente.");
         }
