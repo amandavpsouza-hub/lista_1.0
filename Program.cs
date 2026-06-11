@@ -1,17 +1,19 @@
-﻿ // Solicita a idade do visitante
-        Console.WriteLine("Informe a idade do visitante:");
+﻿  // Solicita a nota final do estudante
+        Console.WriteLine("Informe a nota final:");
 
-        // Lê a idade digitada
-        int idade = int.Parse(Console.ReadLine());
+        // Lê a nota digitada
+        int nota = int.Parse(Console.ReadLine());
 
-        // Verifica a idade
-        if (idade >= 16)
+        // Verificação a situação do estudante
+        if (nota >= 7)
         {
-            Console.WriteLine("Entrada liberada.");
+            Console.WriteLine("Estudante aprovado.");
+        }
+        else if (nota >= 5)
+        {
+            Console.WriteLine("Estudante em recuperação.");
         }
         else
         {
-            Console.WriteLine("Entrada permitida somente com responsável.");
+            Console.WriteLine("Estudante reprovado.");
         }
-    
-    
