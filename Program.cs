@@ -1,10 +1,10 @@
-﻿
-        Console.WriteLine("Informe o número final da contagem:");
+﻿Console.WriteLine("Informe o número inicial da contagem regressiva:");
 
-        int numeroFinal = Convert.ToInt32(Console.ReadLine());
+        int numero = Convert.ToInt32(Console.ReadLine());
 
-        for (int i = 1; i <= numeroFinal; i++)
+        for (int i = numero; i >= 0; i--)
         {
             Console.WriteLine(i);
         }
 
+        Console.WriteLine("Fim da contagem.");
