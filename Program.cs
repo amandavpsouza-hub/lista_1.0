@@ -1,22 +1,28 @@
-﻿Console.WriteLine("Informe o primeiro valor:");
-        int valor1 = Convert.ToInt32(Console.ReadLine());
+﻿int positivos = 0;
+        int negativos = 0;
+        int zeros = 0;
 
-        Console.WriteLine("Informe o segundo valor:");
-        int valor2 = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine("Informe um número:");
 
-        Console.WriteLine("Informe o terceiro valor:");
-        int valor3 = Convert.ToInt32(Console.ReadLine());
+            int numero = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Informe o quarto valor:");
-        int valor4 = Convert.ToInt32(Console.ReadLine());
+            if (numero > 0)
+            {
+                positivos++;
+            }
+            else if (numero < 0)
+            {
+                negativos++;
+            }
+            else
+            {
+                zeros++;
+            }
+        }
 
-        Console.WriteLine("Informe o quinto valor:");
-        int valor5 = Convert.ToInt32(Console.ReadLine());
-
-        int soma = valor1 + valor2 + valor3 + valor4 + valor5;
-
-        double media = soma / 5.0;
-
-        Console.WriteLine("Soma dos valores: " + soma);
-        Console.WriteLine("Média dos valores: " + media);
+        Console.WriteLine("Quantidade de positivos: " + positivos);
+        Console.WriteLine("Quantidade de negativos: " + negativos);
+        Console.WriteLine("Quantidade de zeros: " + zeros);
     
