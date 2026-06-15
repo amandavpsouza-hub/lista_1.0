@@ -1,8 +1,22 @@
-﻿ Console.WriteLine("Informe o número da tabuada:");
+﻿Console.WriteLine("Informe o primeiro valor:");
+        int valor1 = Convert.ToInt32(Console.ReadLine());
 
-        int numero = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Informe o segundo valor:");
+        int valor2 = Convert.ToInt32(Console.ReadLine());
 
-        for (int i = 1; i <= 10; i++)
-        {
-            Console.WriteLine(numero + " * " + i + " = " + (numero * i));
-        }
+        Console.WriteLine("Informe o terceiro valor:");
+        int valor3 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o quarto valor:");
+        int valor4 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o quinto valor:");
+        int valor5 = Convert.ToInt32(Console.ReadLine());
+
+        int soma = valor1 + valor2 + valor3 + valor4 + valor5;
+
+        double media = soma / 5.0;
+
+        Console.WriteLine("Soma dos valores: " + soma);
+        Console.WriteLine("Média dos valores: " + media);
+    
